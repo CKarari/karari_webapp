@@ -1,2 +1,2 @@
 const myHeading = document.querySelector('h1');
-myHeading.textContent = 'CK Name Generator!';
+myHeading.textContent = 'CK Name Generator';
