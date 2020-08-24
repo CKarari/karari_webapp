@@ -1,46 +1,44 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="utf-8">
-        <title>CK Name Generator</title>
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-        <link href="css/styles.css" rel="stylesheet" type="text/css">
-    </head>
-    
-    <body>
-        <h1>CK Name Generator</h1> 
-        <p>
+    <title>CK Name Generator</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>CK Name Generator</h1>
+    <p>
         Hi you!
-        Please follow the prompts below and enter your birthday and your sex. You will generate your name based on your sex and the day of the week that you were born.
-        </p>
-        <p>Mmmmmm! you dont know the day of the week in which you were born! </p> 
-        
-        <p>Do not worry! This little friend will help you find out. You will surely love it!</p>
-        
-        <p>Enter Your Birthday details and hit the Update button</p> 
-        <form method="post">
-        <p>Enter the date (1 - 31)=<input type="text" </p>   
-        <p>Enter month (1-12)=<input type="text" </p>   
-        <p>Enter year (yyyy)=<input type="text" </p>   
-        
-      <p>
-      <input type="button" value="Update" onclick="compute(this.form)">
-      <input type="reset" value="Clear"> </p>
-      
-        <p>Date of Birth=<input type="text" name="result1"</p>   
-        <p>Day of week=<input type="text" name="result2"</p>   
-        
-        </form>
-      
-        
-        <h2>chose Your Sex </h2> 
-       <input type="checkbox" id=sex1 name="sex1" value="Male">
-         <label for="gender1"> Male</label><br>
-        <input type="checkbox" id="sex2" name="Sex2" value="Female">
-        <label for="gender2"> Female</label><br>
-        
-        
-        
-        <script src="scripts/main.js"></script>
-    </body>
-    
-    </html>
+        Please follow the prompts below and enter your birthday and your sex. You will generate your name based on your
+        sex and the day of the week that you were born.
+    </p>
+    <p>Mmmmmm! you dont know the day of the week in which you were born! </p>
+
+    <p>Do not worry! This little friend will help you find out. You will surely love it!</p>
+
+    <p>Enter Your Birthday details and hit the Update button</p>
+
+    <form method="post">
+        <p>Date born (1-31): <input type="text" name="day"> </p>
+        <p>Month (1-12): <input type="text" name="month"> </p>
+        <p>Year (eg. 1976): <input type="text" name="year"> </p>
+        <p><input type="button" value="Update" onclick="compute(this.form)"> <input type="reset" value="Clear"> </p>
+        <p>Date of Birth: <input type="text" name="result1"> </p>
+        <p>Day of Week: <input type="text" name="result2"> </p>
+    </form>
+
+
+    <h2>chose Your Sex </h2>
+    <input type="checkbox" id=sex1 name="sex1" value="Male">
+    <label for="gender1"> Male</label><br>
+    <input type="checkbox" id="sex2" name="Sex2" value="Female">
+    <label for="gender2"> Female</label><br>
+
+
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
