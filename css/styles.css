@@ -3,6 +3,8 @@ h1 {
     font-weight: bold;
     font-family: fantasy;
     text-align: center;
+}
 
-
+p {text-align:center;
+    color: aquamarine;
 }
