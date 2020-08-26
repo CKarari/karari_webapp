@@ -8,3 +8,10 @@ h1 {
 p {text-align:center;
     color: green
 }
+
+h2 {
+    color: blue;
+    font-weight: bold;
+    font-family: fantasy;
+    text-align: center; 
+}
