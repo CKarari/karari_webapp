@@ -4,48 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CK Name Generator</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Akan Name Generator_CK</title>
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>CK Name Generator</h1>
+    <div class="content">
+        <div class="container">
 
-    <p>
-        Hi you!
-        Please follow the prompts below and enter your birthday and your sex. You will generate your name based on your
-        sex and the day of the week that you were born.
-    </p>
-    <p>Mmmmmm! you dont know the day of the week in which you were born! </p>
+            <h1>The Akan name generator!</h1>
+            <p>Hello! This web application takes your birthday details and calculates the day of the week you
+                were born. It the outputs your Akan Name depending on your gender. </p>
 
-    <p>Do not worry! This little friend will help you find out. You will surely love it!</p>
+            <p>This is a Ghanian culture where
+                children are given their first name as a 'day name' which corresponds to the day in the week they were
+                born. </p>
+            <p>Find out what your Akan name is!</p>
+            <p>Fill in your birthday and gender then click Generate my Akan Name. </p>
+        </div>
 
-    <p>Enter Your Birthday details and hit the Update button</p>
+        <form id="akanForm">
+            <div>
+                <label for="date">Enter Your Birthdate</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                <p>Select Your Gender: </p>
+            </div>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+            <div>
+                <input id="get-name" type="submit" name="" value="Generate name">
+                <button type="reset">Clear input</button>
+            </div>
 
-    <form method="post">
-        <p>Date born (1-31): <input type="text" name="day"> </p>
-        <p>Month (1-12): <input type="text" name="month"> </p>
-        <p>Year (eg. 1976): <input type="text" name="year"> </p>
-        <p><input type="button" value="Update" onclick="compute(this.form)"></p>
-        <p>Date of Birth: <input type="text" name="result1"> </p>
-        <p>You were born on: <input type="text" name="result2"> </p>
+    </div>
+    </div>
+    </div>
+    </div>
     </form>
 
+    <div id="reveal-result"></div>
 
-    <h2>chose Your Sex </h2>
-    <p><input type="checkbox" id=sex1 name="sex1" value="Male">
-        <label for="gender1"> Male</label><br>
-        <input type="checkbox" id="sex2" name="Sex2" value="Female">
-        <label for="gender2"> Female</label><br> </p>
-
-
-    <p><input type="button" value="Update My Name" onclick="compute(this.form)"> <input type="reset" value="Clear">
-    </p>
-    <p>My Name is: <input type="text" name="result3"> </p>
-
+    <div class="footer">
+        Developed by Karari 2020
+    </div>
     <script src="scripts/main.js"></script>
-
 </body>
 
 </html>
