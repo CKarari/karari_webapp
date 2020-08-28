@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan Name Generator_CK</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
@@ -16,13 +16,13 @@
 
             <h1>The Akan name generator!</h1>
             <p>Hello! This web application takes your birthday details and calculates the day of the week you
-                were born. It the outputs your Akan Name depending on your gender. </p>
+                were born. It then outputs your Akan Name depending on your gender. </p>
 
             <p>This is a Ghanian culture where
                 children are given their first name as a 'day name' which corresponds to the day in the week they were
                 born. </p>
-            <p>Find out what your Akan name is!</p>
-            <p>Fill in your birthday and gender then click Generate my Akan Name. </p>
+            <p>Want to know your Akan Name?</p>
+            <p>Fill in your birthday and gender then click Generate Akan Name.</p>
         </div>
 
         <form id="akanForm">
@@ -41,10 +41,10 @@
                 <label for="female">Female</label>
                 <input type="radio" name="gender" id="female" value="female">
             </div>
-            <div>
-                <input id="get-name" type="submit" name="" value="Generate name">
-                <button type="reset">Clear input</button>
-            </div>
+
+            <input type="button" class="button" id="get-name" type="submit" name="Generate" value="Generate Akan Name"
+                onclick="generateAkanname()">
+            <button type="reset">Clear Input</button>
 
     </div>
     </div>
@@ -54,10 +54,10 @@
 
     <div id="reveal-result"></div>
 
-    <div class="footer">
-        Developed by Karari 2020
-    </div>
-    <scripts src="scripts/main.js"></scripts>
+    <script src="scripts/main.js"></script>
 </body>
+<div class="footer">
+    Developed by Karari &copy;2020
+</div>
 
 </html>
